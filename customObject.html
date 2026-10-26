@@ -1,0 +1,20 @@
+<script>
+    //object  is collection of multiple values
+    //object may have different different keys
+  let product = {
+    name: "Sugar",
+    Price: 50,
+    path: " https://encrypted-tbn0.gstatic.com/shopping?q=tbn:ANd9GcTs1jgCsISbId13PpniKu-si4y6jyCwuB8lQaHgteZEAn9evmdDYkj_ZWliN0xgLZj6DD5GRHrlY4hFHhPHg-BcX_NBxK5FdbE9J7fEVgcMl-U5Vh54Di3jGA",
+    size:["xl","l","m","s"],
+  };
+  console.log(product.name);
+  console.log(product["name"]);
+  document.write(`
+    <div>
+        <img src="${product.path}"/>
+        <h2>${product.price}</h2>
+        <p>${product.name}</P>
+            <p>${product.size.join(",")}</P>
+        </div>
+    `);
+</script>

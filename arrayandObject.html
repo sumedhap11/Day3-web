@@ -1,0 +1,43 @@
+
+
+
+<script>
+  let products = [
+    {
+      name: "Sugar",
+      Price: 50,
+      path: " https://encrypted-tbn0.gstatic.com/shopping?q=tbn:ANd9GcTs1jgCsISbId13PpniKu-si4y6jyCwuB8lQaHgteZEAn9evmdDYkj_ZWliN0xgLZj6DD5GRHrlY4hFHhPHg-BcX_NBxK5FdbE9J7fEVgcMl-U5Vh54Di3jGA",
+    },
+    {
+      name: "Chocolate",
+      Price: 100,
+      path: "https://encrypted-tbn0.gstatic.com/shopping?q=tbn:ANd9GcSHGhj2UVuyHuIDzRIDYOgN8-VX_FEf1xMEhrVaMdzApdWts-6D5on1lq8QjpQaruUV_iKpfuLBc-EZlr_mWdcYORi0NL5bZlsNyEAQCrZ-dsDXfLTc9Oyc",
+    },
+    {
+      name: "Chocolate",
+      Price: 200,
+      path: "https://encrypted-tbn0.gstatic.com/shopping?q=tbn:ANd9GcQai4yg3kut2TeoGRf5_hNrDAya9BUWA5_OsKwa-D7DbZtkM0DIrOkgD0LsCwm95fWhvJwF4TzZlRx1MkjLm32oyRfKph942dbIhKjyJBMMepL1sShMnoWh",
+    },
+  ];
+  for (let value of products) {
+    console.log(value);
+    document.write(`
+    <div>
+        <img src="${value.path}"/>
+        <h2>${value.price}</h2>
+        <p>${value.name}</P>
+        </div>;
+    `);
+  }
+</script>
+<style>
+  div {
+    border: solid;
+    width: 300px;
+    text-align: center;
+    float: left;
+  }
+  div img {
+    width: 100%;
+  }
+</style>

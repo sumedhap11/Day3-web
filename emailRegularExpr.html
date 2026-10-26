@@ -1,0 +1,13 @@
+
+<!--
+om@gmail.com
+123@gmail.com
+
+-->
+<script>
+    let regularExpr=/^([a-zA-Z0-9]([a-zA-Z0-9_\.]+)?[a-zA-Z0-9])@([a-zA-Z0-9]([a-zA-Z0-9\-]+)?[a-zA-Z0-9])\.([a-zA-Z]{2,})(\.[a-zA-Z]{2,})?$/
+
+    let emailId='ovikapatil1110@gmail.com'
+    let result=regularExpr.test(emailId)
+    console.log(result);
+</script>
